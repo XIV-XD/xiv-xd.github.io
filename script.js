@@ -92,3 +92,26 @@ function changeTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
+function toggleFullscreen() {
+  let elem = document.body;
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}
+
+
+function exitFullScreen(){
+    if (document.fullscreenElement) {
+      document.exitFullscreen()
+        .catch((err) => console.error(err))
+    } else {
+      document.documentElement.requestFullscreen();
+    }
+}
