@@ -66,12 +66,13 @@ $(".pop-up .close").click(function () {
  $(".pop-up").removeClass("visible");
 });
 
-const toggleButton = document.querySelector('.dark-light');
+const toggleButton = document.querySelector('.modeToggle');
 
 toggleButton.addEventListener('click', () => {
   document.body.classList.toggle('light-mode');
 });
 
+// SIDE TAB CHANGE FUNCTION
 function changeTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -106,12 +107,11 @@ function toggleFullscreen() {
   }
 }
 
-
-function exitFullScreen(){
-    if (document.fullscreenElement) {
-      document.exitFullscreen()
-        .catch((err) => console.error(err))
-    } else {
-      document.documentElement.requestFullscreen();
-    }
+document.getElementById("profile-popup").onclick = function (e) { 
+  document.getElementById("profile-dropdown").style.display = "block";
+  
+}
+document.getElementById("profile-dropdown").onmouseleave = function (e) { 
+  
+  document.getElementById("profile-dropdown").style.display = "none";
 }
