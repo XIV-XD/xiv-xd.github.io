@@ -60,11 +60,7 @@ body {
   height: 100vh;
 }
 
-@media screen and (max-width: 480px) {
-  body {
-    padding: 0.8em;
-  }
-}
+
 
 .video-bg {
   position: fixed;
@@ -167,11 +163,6 @@ body.light-mode .video-bg:before {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 480px) {
-  .header {
-    padding: 0 16px;
-  }
-}
 
 .header-menu {
   display: flex;
@@ -186,11 +177,6 @@ body.light-mode .video-bg:before {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 610px) {
-  .header-menu a:not(.main-header-link) {
-    display: none;
-  }
-}
 
 .header-menu a.is-active,
 .header-menu a:hover {
@@ -213,11 +199,7 @@ body.light-mode .video-bg:before {
   top: 16px;
 }
 
-@media screen and (max-width: 1055px) {
-  .notify {
-    display: none;
-  }
-}
+
 
 .red-menu-circle {
   width: 15px;
@@ -263,11 +245,7 @@ body.light-mode .video-bg:before {
   margin-right: 195px;
   flex-shrink: 0;
 } */
-@media screen and (max-width: 945px) {
-  .menu-circle {
-    display: none;
-  }
-}
+
 
 .search-bar {
   height: 40px;
@@ -354,11 +332,7 @@ body.light-mode .video-bg:before {
   margin-left: 22px;
 }
 
-@media screen and (max-width: 945px) {
-  .notification+svg {
-    display: none;
-  }
-}
+
 
 .profile-img {
   width: 32px;
@@ -419,12 +393,6 @@ body.light-mode .video-bg:before {
   padding: 26px;
   overflow: auto;
   flex-shrink: 0;
-}
-
-@media screen and (max-width: 945px) {
-  .left-side {
-    display: none;
-  }
 }
 
 .side-wrapper+.side-wrapper {
@@ -509,11 +477,7 @@ body.light-mode .video-bg:before {
   margin-left: 150px;
 }
 
-@media screen and (max-width: 1055px) {
-  .main-header .header-menu {
-    margin: auto;
-  }
-}
+
 
 .main-header .header-menu a {
   padding: 20px 24px;
@@ -538,11 +502,7 @@ body.light-mode .video-bg:before {
   padding-top: 20px;
 }
 
-@media screen and (max-width: 1055px) {
-  .menu-link-main {
-    display: none;
-  }
-}
+
 
 .siva-nandh {
   color: var(--theme-color);
@@ -561,12 +521,6 @@ body.light-mode .video-bg:before {
   background-color: var(--theme-bg-color);
 }
 
-@media screen and (max-width: 510px) {
-  .content-wrapper {
-    padding: 20px;
-  }
-}
-
 .content-wrapper-header {
   display: flex;
   align-items: center;
@@ -578,11 +532,6 @@ body.light-mode .video-bg:before {
   padding: 20px 40px;
 }
 
-@media screen and (max-width: 415px) {
-  .content-wrapper-header {
-    padding: 20px;
-  }
-}
 
 .content-wrapper.overlay {
   pointer-events: none;
@@ -665,11 +614,6 @@ body.light-mode .video-bg:before {
   object-position: center;
 }
 
-@media screen and (max-width: 570px) {
-  .content-wrapper-img {
-    width: 110px;
-  }
-}
 
 .content-section {
   margin-top: 30px;
@@ -737,12 +681,6 @@ body.light-mode .video-bg:before {
   width: 150px;
 }
 
-@media screen and (max-width: 480px) {
-  .products {
-    width: 120px;
-  }
-}
-
 .status {
   margin-left: auto;
   width: 140px;
@@ -750,11 +688,7 @@ body.light-mode .video-bg:before {
   position: relative;
 }
 
-@media screen and (max-width: 700px) {
-  .status {
-    display: none;
-  }
-}
+
 
 .status-circle {
   width: 6px;
@@ -776,11 +710,7 @@ body.light-mode .video-bg:before {
   padding: 6px 24px;
 }
 
-@media screen and (max-width: 390px) {
-  .status-button {
-    padding: 6px 14px;
-  }
-}
+
 
 .status-button.open {
   background: none;
@@ -806,11 +736,7 @@ body.light-mode .video-bg:before {
   margin: 0 12px;
 }
 
-@media screen and (max-width: 415px) {
-  .adobe-product .menu {
-    display: none;
-  }
-}
+
 
 .dropdown {
   position: relative;
@@ -861,11 +787,6 @@ body.light-mode .video-bg:before {
   margin-left: auto;
 }
 
-@media screen and (max-width: 480px) {
-  .button-wrapper {
-    width: auto;
-  }
-}
 
 .pop-up {
   position: absolute;
@@ -885,12 +806,6 @@ body.light-mode .video-bg:before {
   display: flex;
   flex-direction: column;
   white-space: normal;
-}
-
-@media screen and (max-width: 570px) {
-  .pop-up {
-    width: 100%;
-  }
 }
 
 .pop-up.visible {
@@ -1032,27 +947,7 @@ body.light-mode .video-bg:before {
   margin-top: 16px;
 }
 
-@media screen and (max-width: 1110px) {
-  .app-card {
-    width: calc(50% - 20px);
-  }
 
-  .app-card:last-child {
-    margin-top: 20px;
-    margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 565px) {
-  .app-card {
-    width: calc(100% - 20px);
-    margin-top: 20px;
-  }
-
-  .app-card+.app-card {
-    margin-left: 0;
-  }
-}
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -1280,4 +1175,93 @@ body.light-mode .video-bg:before {
   left: 24px;
 }
 
-/* IOS TOGGLE END */
+
+/* BEST CSS */
+
+@media screen and (max-width: 1200px) {
+  .app-card {
+    width: calc(50% - 20px);
+  }
+  .notify {
+    display: none;
+  }
+  .main-header .header-menu {
+    margin: auto;
+  }
+
+  .menu-link-main {
+    display: none;
+  }
+  .status {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .left-side {
+    display: none;
+  }
+  .menu-circle {
+    display: none;
+  }
+  .notification+svg {
+    display: none;
+  }
+  
+
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0.8em;
+  }
+  .menu{
+    display: none;
+  }
+  
+  .header-menu a:not(.main-header-link) {
+    display: none;
+  }
+  .app-card {
+    width: calc(100% - 20px);
+  }
+
+  .app-card+.app-card {
+    margin-left: 0;
+  }
+  .content-wrapper-header {
+    padding: 20px;
+  }
+  .content-wrapper-img {
+    width: 110px;
+  }
+  
+  .content-wrapper {
+    padding: 20px;
+  }
+  .status-button {
+    padding: 6px 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pop-up {
+    width: 100%;
+  }
+  .status-button {
+    padding: 6px 9px;
+  }
+  
+  .header {
+    padding: 0 16px;
+  }
+  .products {
+    width: 120px;
+  }
+  .button-wrapper {
+    width: auto;
+  }
+  
+  .adobe-product .menu {
+    display: none;
+  }
+  
+  
+}
