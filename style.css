@@ -421,7 +421,8 @@ body.light-mode .video-bg:before {
   border-radius: 6px;
   transition: 0.3s;
 }
-.dropdown-links{
+
+.dropdown-links {
   text-decoration: none;
   color: var(--theme-color);
   display: flex;
@@ -1113,37 +1114,43 @@ body.light-mode .video-bg:before {
   position: absolute;
   display: block;
 }
+
 .beforeAnimation {
   transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
 }
+
 .afterAnimation {
   box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 0px 0 hsla(0, 0%, 0%, 0.04), 0 4px 9px hsla(0, 0%, 0%, 0.13), 0 3px 3px hsla(0, 0%, 0%, 0.05);
   transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
 }
+
 .toggleWrapper {
   /* margin: auto; */
   /* margin-top: 20px; */
   margin-left: auto;
   border-radius: 5px;
 }
+
 .toggleWrapper input.modeToggle {
   opacity: 0;
   position: absolute;
 }
-.toggleWrapper input.modeToggle + label {
+
+.toggleWrapper input.modeToggle+label {
   position: relative;
   display: inline-block;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   transition: 0.4s ease;
   height: 30px;
   width: 50px;
   border: 1px solid var(--theme-color);
   border-radius: 60px;
 }
-.toggleWrapper input.modeToggle + label:before {
+
+.toggleWrapper input.modeToggle+label:before {
   content: "";
   position: absolute;
   display: block;
@@ -1154,7 +1161,8 @@ body.light-mode .video-bg:before {
   left: 0;
   border-radius: 30px;
 }
-.toggleWrapper input.modeToggle + label:after {
+
+.toggleWrapper input.modeToggle+label:after {
   content: "";
   position: absolute;
   display: block;
@@ -1167,24 +1175,30 @@ body.light-mode .video-bg:before {
   left: 0px;
   border-radius: 60px;
 }
-.toggleWrapper input.modeToggle:checked + label:before {
+
+.toggleWrapper input.modeToggle:checked+label:before {
   background: #2ecc71;
   transition: width 0.2s cubic-bezier(0, 0, 0, 0.1);
 }
-.toggleWrapper input.modeToggle:checked + label:after {
+
+.toggleWrapper input.modeToggle:checked+label:after {
   left: 24px;
 }
-
-
-/* BEST CSS */
+.navbar{
+  display: none;
+}
+/* SCREEN WIDTH SPECIFIC VALUES */
 
 @media screen and (max-width: 1200px) {
+
   .app-card {
     width: calc(50% - 20px);
   }
+
   .notify {
     display: none;
   }
+
   .main-header .header-menu {
     margin: auto;
   }
@@ -1192,34 +1206,100 @@ body.light-mode .video-bg:before {
   .menu-link-main {
     display: none;
   }
+
   .status {
     display: none;
   }
 }
+
 @media screen and (max-width: 992px) {
+  
   .left-side {
     display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: var(--theme-bg-color);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
   }
+
+  /* .left-side-dark {
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme-bg-color);
+    backdrop-filter: blur(10px);
+  }
+  .blur {
+    background:url('http://i0.kym-cdn.com/photos/images/original/000/051/726/17-i-lol.jpg?1318992465') no-repeat center;
+    background-size:cover;
+    -webkit-filter: blur(13px);
+    -moz-filter: blur(13px);
+    -o-filter: blur(13px);
+    -ms-filter: blur(13px);
+    filter: blur(13px);
+  
+} */
+  
+
   .menu-circle {
     display: none;
   }
+
   .notification+svg {
     display: none;
   }
   
+/* NAVIGATION 3 LINE */
 
+.navbar {
+  width: 30px;
+  display: block;
+  margin: 40px 20px 40px 0px;
+  padding: 4px 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
+
+.navbar div {
+  height: 4px !important;
+  background: var(--theme-color);
+  margin: 7px 0px 7px 0px;
+  border-radius: 25px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.two {
+  width: 18px;
+}
+
+.three {
+  width: 25px;
+}
+
+.navbar:hover div {
+  width: 30px;
+}
+
+
+/* NAVIGATION 3 LINE END */
+
+  
+}
+
 @media screen and (max-width: 768px) {
   body {
     padding: 0.8em;
   }
-  .menu{
+
+  .menu {
     display: none;
   }
-  
+
   .header-menu a:not(.main-header-link) {
     display: none;
   }
+
   .app-card {
     width: calc(100% - 20px);
   }
@@ -1227,41 +1307,48 @@ body.light-mode .video-bg:before {
   .app-card+.app-card {
     margin-left: 0;
   }
+
   .content-wrapper-header {
     padding: 20px;
   }
+
   .content-wrapper-img {
     width: 110px;
   }
-  
+
   .content-wrapper {
     padding: 20px;
   }
+
   .status-button {
     padding: 6px 14px;
   }
 }
+
 @media screen and (max-width: 480px) {
   .pop-up {
     width: 100%;
   }
+
   .status-button {
     padding: 6px 9px;
   }
-  
+
   .header {
     padding: 0 16px;
   }
+
   .products {
     width: 120px;
   }
+
   .button-wrapper {
     width: auto;
   }
-  
+
   .adobe-product .menu {
     display: none;
   }
-  
-  
+
+
 }

@@ -108,10 +108,57 @@ function toggleFullscreen() {
 }
 
 document.getElementById("profile-popup").onclick = function (e) { 
-  document.getElementById("profile-dropdown").style.display = "block";
+  var x = document.getElementById("profile-dropdown")
   
+  if (window.getComputedStyle(x).display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
 document.getElementById("profile-dropdown").onmouseleave = function (e) { 
   
   document.getElementById("profile-dropdown").style.display = "none";
 }
+
+document.getElementById("navbar").onclick = function (e) { 
+  var x = document.getElementById("navbarele")
+  
+  if (window.getComputedStyle(x).display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// NAV BAR
+
+
+// const body = document.querySelector("body"),
+//   nav = document.querySelector("nav"),
+ 
+ 
+//   sidebarOpen = document.querySelector(".sidebarOpen"),
+//   siderbarClose = document.querySelector(".siderbarClose");
+
+
+// //   js code to toggle sidebar
+// sidebarOpen.addEventListener("click", () => {
+//   nav.classList.add("active");
+// });
+
+// body.addEventListener("click", (e) => {
+//   let clickedElm = e.target;
+
+//   if (
+//     !clickedElm.classList.contains("sidebarOpen") &&
+//     !clickedElm.classList.contains("menu")
+//   ) {
+//     nav.classList.remove("active");
+//   }
+// });
+
+// NAV BAR END
+
+
+
