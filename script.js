@@ -131,5 +131,8 @@ document.getElementById("navbar").onclick = function (e) {
   }
 }
 
-
-
+$(document).ready(function(){
+	$('#navbar').click(function(){
+		$(this).toggleClass('open');
+	});
+});

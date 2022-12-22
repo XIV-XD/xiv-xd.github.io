@@ -31,10 +31,16 @@
       <div onclick="toggleFullscreen()" class="red-menu-circle menu-circle"></div>
       <div onclick="" class="yellow-menu-circle menu-circle"></div>
       <div onclick="toggleFullscreen()" class="green-menu-circle menu-circle"></div>
-      <div id="navbar" class="navbar">
+      <!-- <div id="navbar" class="navbar">
         <div class="one"></div>
         <div class="two"></div>
         <div class="three"></div>
+      </div> -->
+      <div id="navbar">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <!-- SEARCH BAR AND HEADER ICONS -->
       <div class="header-profile">
@@ -85,11 +91,11 @@
         <div class="side-wrapper">
           <div class="side-title">About me</div>
           <div class="side-menu">
-            <a href="#" class="tablinks" onclick="changeTab(event, 'profile')">
+            <a href="#" class="tablinks" onclick="changeTab(event, 'home')">
               <img src="assets/img/ico/home.png" class="invert" height="20px" style="padding-right: 10px;">
               Home
             </a>
-            <a href="#" class="tablinks" onclick="changeTab(event, 'skills')">
+            <a href="#" class="tablinks" onclick="changeTab(event, 'resume')">
 
               <img src="assets/img/ico/profile.png" class="invert" height="20px" style="padding-right: 10px;">
 
@@ -101,72 +107,59 @@
         <div class="side-wrapper">
           <div class="side-title">Skill set</div>
           <div class="side-menu">
-            <a href="#" class="tablinks" onclick="changeTab(event, 'works')">
+            <a href="#" class="tablinks" onclick="changeTab(event, 'projects')">
               <img src="assets/img/ico/coding.png" class="invert" height="20px" style="padding-right: 10px;">
 
-              Programming
+              Projects
             </a>
-            <a href="#" class="tablinks" onclick="changeTab(event, 'projects')">
-              <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              Designing
+            <a href="#" class="tablinks" onclick="changeTab(event, 'education')">
+              <img src="assets/img/ico/education.png" class="invert" height="20px" style="padding-right: 10px;">
+              Education
             </a>
-            <a href="#">
-              <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              Editing
+            <a href="#" class="tablinks" onclick="changeTab(event, 'certificates')">
+              <img src="assets/img/ico/certificate.png" class="invert" height="20px" style="padding-right: 10px;">
+              Certificates
             </a>
-            <a href="#">
-              <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              Illustrations
+            <a href="#" class="tablinks" onclick="changeTab(event, 'skillset')">
+              <img src="assets/img/ico/skills.png" class="invert" height="20px" style="padding-right: 10px;">
+              Skill set
             </a>
-            <a href="#">
-              <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              UI/UX
+            <a href="#" class="tablinks" onclick="changeTab(event, 'sociallinks')">
+              <img src="assets/img/ico/social.png" class="invert" height="20px" style="padding-right: 10px;">
+              Social Links
             </a>
-            <a href="#">
-              <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              3D/AR
-            </a>
-          </div>
-        </div>
-        <div class="side-wrapper">
-          <div class="side-title">Fonts</div>
-          <div class="side-menu">
-            <a href="#">
-              <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              Manage Fonts
+            <a href="#" class="tablinks" onclick="changeTab(event, 'contact')">
+              <img src="assets/img/ico/contact.png" class="invert" height="20px" style="padding-right: 10px;">
+              Contact
             </a>
           </div>
         </div>
         <div class="side-wrapper">
-          <div class="side-title">Resource Links</div>
+          <div class="side-title">Freelance</div>
           <div class="side-menu">
-            <a href="#">
+            <a href="#" class="tablinks" onclick="changeTab(event, 'services')">
               <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              Stock
+              Services
             </a>
-            <a href="#">
-              <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              Tutorials
+          </div>
+        </div>
+        <div class="side-wrapper">
+          <div class="side-title">Activities</div>
+          <div class="side-menu">
+            <a href="#" class="tablinks" onclick="changeTab(event, 'cs')">
+              <img src="assets/img/ico/comingsoon.png" class="invert" height="20px" style="padding-right: 10px;">
+              Coming Soon
             </a>
-            <a href="#">
-              <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              Portfolio
+            <a href="#" class="tablinks" onclick="changeTab(event, 'cs')">
+              <img src="assets/img/ico/comingsoon.png" class="invert" height="20px" style="padding-right: 10px;">
+              Coming Soon
             </a>
-            <a href="#">
-              <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              Behance
-            </a>
-            <a href="#">
-              <img src="assets/img/ico/designing.png" class="invert" height="20px" style="padding-right: 10px;">
-              Social Forum
-            </a>
-            
           </div>
         </div>
       </div>
       <!-- TAB BAR END  -->
-      
-      <div id="profile" class="tabcontent main-container">
+
+      <div id="home" class="tabcontent main-container">
         <div class="main-header-siva">
           <a class="menu-link-main-siva">Hello, My name is</a>
 
@@ -405,12 +398,12 @@
         </div>
       </div>
     </div>
-    <div id="skills" class="tabcontent main-container" style="display: none;">
+    <div id="resume" class="tabcontent main-container" style="display: none;">
 
       <iframe src="assets/doc/resume_sivanandh.pdf" style="width:100%;height:700px;"></iframe>
 
     </div>
-    <div id="works" class="tabcontent main-container" style="display: none;">
+    <div id="projects" class="tabcontent main-container" style="display: none;">
       <div class="overlay">
         <div class="spinner center">
           <div class="spinner-blade"></div>
@@ -428,10 +421,133 @@
         </div>
       </div>
     </div>
-    <div id="projects" class="tabcontent main-container" style="display: none;">
-      <!-- SKILL DIV -->
-      <H3>PROJECTS</H3>
+    <div id="education" class="tabcontent main-container" style="display: none;">
+      <div class="overlay">
+        <div class="spinner center">
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+        </div>
+      </div>
     </div>
+    <div id="certificates" class="tabcontent main-container" style="display: none;">
+      <div class="overlay">
+        <div class="spinner center">
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+        </div>
+      </div>
+    </div>
+    <div id="skillset" class="tabcontent main-container" style="display: none;">
+      <div class="overlay">
+        <div class="spinner center">
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sociallinks" class="tabcontent main-container" style="display: none;">
+      <div class="overlay">
+        <div class="spinner center">
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="tabcontent main-container" style="display: none;">
+      <div class="overlay">
+        <div class="spinner center">
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+        </div>
+      </div>
+    </div>
+    <div id="services" class="tabcontent main-container" style="display: none;">
+      <div class="overlay">
+        <div class="spinner center">
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+        </div>
+      </div>
+    </div>
+    <div id="cs" class="tabcontent main-container" style="display: none;">
+      <div class="overlay">
+        <div class="spinner center">
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+          <div class="spinner-blade"></div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <div class="overlay-app"></div>
 
